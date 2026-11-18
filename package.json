@@ -1,0 +1,33 @@
+{
+  "name": "hotel-booking-qa",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Test automation framework for a hotel booking platform: API and UI tests with Playwright + TypeScript.",
+  "keywords": [
+    "qa-practice"
+  ],
+  "homepage": "https://github.com/maxlbborges/hotel-booking-qa#readme",
+  "bugs": {
+    "url": "https://github.com/maxlbborges/hotel-booking-qa/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxlbborges/hotel-booking-qa.git"
+  },
+  "license": "ISC",
+  "author": "Max Leandro",
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --project=chromium",
+    "test:api": "playwright test --project=api",
+    "test:ui:headed": "playwright test --headed --project=chromium",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "dotenv": "^18.0.10",
+    "typescript": "^7.0.2"
+  }
+}
