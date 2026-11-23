@@ -16,7 +16,7 @@
   },
   "license": "ISC",
   "author": "Max Leandro",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "playwright test",
     "test:ui": "playwright test --project=chromium",

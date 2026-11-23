@@ -1,0 +1,41 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "include": ["tests/**/*", "fixtures/**/*", "pages/**/*", "playwright.config.ts"],
+  "compilerOptions": {
+    // File Layout
+    // "rootDir": "./src",
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    // This is responsible for choosing the right module resolution strategy. Nodenext follows Node's real module rules.
+    "module": "nodenext",
+    // Target will be responsible if we need to downlevel any JS component for older environments, since we're using recent envs, this should be fine.
+    "target": "esnext",
+    "types": ["node"],
+    // No Emit determines if the transpiled JS files will be created on the project, since we're using playwright we won't need them.
+    "noEmit": true,
+    // For nodejs:
+    // "lib": ["esnext"],
+    // and npm install -D @types/node
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    // Strict will enforce typescript type restrictions in order to guarantee reliability
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  }
+}
